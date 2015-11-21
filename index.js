@@ -7,7 +7,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.get('/', function(request, response) {
     var data = fs.readFileSync('index.html');
-    response.send(data);
+//    response.send(data);
 })
 
 app.listen(app.get('port'), function() {
